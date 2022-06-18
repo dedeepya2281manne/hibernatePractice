@@ -14,5 +14,8 @@
 		<mapping class="com.web.model.Student"/>
 		<mapping class="com.web.model.Address"/>
 		
+		<mapping class = "com.web.model.onetoone.Question" />
+		<mapping class = "com.web.model.onetoone.Answer" />
+		
 	</session-factory>
 </hibernate-configuration>
