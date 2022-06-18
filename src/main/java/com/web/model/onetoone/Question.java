@@ -2,6 +2,7 @@ package com.web.model.onetoone;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
 import jakarta.persistence.OneToOne;
 
 @Entity
@@ -12,6 +13,7 @@ public class Question {
 	private String ques;
 	
 	@OneToOne
+	@JoinColumn(name = "ans_id") //giving name to column
 	private Answer answer;
 
 	public int getQuesId() {
